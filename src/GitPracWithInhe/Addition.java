@@ -3,7 +3,8 @@ import java.util.Scanner;
 
 public class Addition {
     public void numbers() {
-        int firstNum, secNum;
+        int firstNum;
+        int secNum;
         Scanner s=new Scanner(System.in);
 
         System.out.print("Enter a first Number:- ");
