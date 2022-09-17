@@ -2,23 +2,26 @@ package GitPracWithInhe;
 import java.util.Scanner;
 
 public class Addition {
-    public void numbers() {
         int firstNum;
         int secNum;
         Scanner s=new Scanner(System.in);
 
-        System.out.print("Enter a first Number:- ");
-        firstNum=s.nextInt();
+        public void numbers(){
+            System.out.println("Enter a first Number:- ");
+            firstNum=s.nextInt();
 
-        System.out.print("Enter a second number:- ");
-        secNum=s.nextInt();
-
-        System.out.println("Addition is " + (firstNum+secNum));
-    }
-
+            System.out.println("Enter a second Number:- ");
+            secNum=s.nextInt();
+        }
+        public void add(){
+            int result;
+            result=firstNum+secNum;
+            System.out.println("Addition of given number is :- " + result);
+        }
     public static void main(String[] args) {
         Addition obj=new Addition();
         obj.numbers();
+        obj.add();
 
     }
 }

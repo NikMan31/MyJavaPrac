@@ -1,26 +1,19 @@
+// Here, numbers is function property of Addition class ( Here, This number() is normal so using object you can do it)
+// If this function is static then here you need to use classname.function like Addition.numbers()
 package GitPracWithInhe;
 import java.util.Scanner;
 public class Substrcation extends Addition{
     public static void sub(int firstNum, int secNum){
-        System.out.println("Substraction is " + (firstNum-secNum));
+        int result;
+        result=firstNum-secNum;
+        System.out.println("Substraction is :- " + result);
     }
 
     public static void main(String[] args) {
-        int firstNum, secNum;
+        Substrcation s1=new Substrcation();
+        s1.numbers();
+        sub(s1.firstNum, s1.secNum);
 
-        Scanner s= new Scanner(System.in);
 
-        System.out.print("Enter first Number:- ");
-        firstNum=s.nextInt();
-
-        System.out.print("Enter a second number:- ");
-        secNum=s.nextInt();
-
-        sub(firstNum, secNum);
-
-        Substrcation objForSub=new Substrcation();
-        System.out.println("This is addition through Inheritance");
-        objForSub.numbers(); // Here, numbers is function property of Addition class ( Here, This number() is normal so using object you can do it)
-                               // If this function is static then here you need to use classname.function like Addition.numbers()
     }
 }
